@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  bacterialgenomeassemblyandannotationpipeline:
+    image: bacterialgenomeassemblyandannotationpipeline
+    build:
+      context: .
+      dockerfile: ./Dockerfile
