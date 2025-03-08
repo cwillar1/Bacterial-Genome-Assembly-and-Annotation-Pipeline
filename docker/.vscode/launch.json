@@ -15,5 +15,6 @@
                 "projectType": "general"
             }
         }
-    ]
+    ],
+    "java.jdt.ls.java.home": "/usr/local/sdkman/candidates/java/21.0.5-ms/bin/java"
 }
