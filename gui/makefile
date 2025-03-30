@@ -1,12 +1,13 @@
 CXX = g++
-CXXFLAGS = -Wall
+CXXFLAGS = -std=c++17 `pkg-config --cflags gtk+-3.0`
+LDFLAGS = `pkg-config --libs gtk+-3.0`
+TARGET = driver
+SOURCE = main.cpp
 
-driver: main.cpp
-	$(CXX) $(CXXFLAGS) main.cpp -o driver `pkg-config --cflags --libs gtk+-3.0`
+all: $(TARGET)
+
+$(TARGET): $(SOURCE)
+	$(CXX) $(CXXFLAGS) $(SOURCE) -o $(TARGET) $(LDFLAGS)
 
 clean:
-	rm *.o*
-	rm *~
-
-run:
-	./driver
+	rm -f $(TARGET)

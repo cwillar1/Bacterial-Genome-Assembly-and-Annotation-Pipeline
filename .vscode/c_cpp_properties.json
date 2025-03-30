@@ -14,7 +14,10 @@
                 "/usr/include/freetype2",
                 "/usr/include/libpng16",
                 "/usr/include/gdk-pixbuf-2.0",
-                "/usr/include/gtk-3.0/"
+                "/usr/include/gtk-3.0/",
+                "${workspaceFolder}/gui/",
+                "/usr/include/gtkmm-3.0",
+                "/usr/include/glibmm-2.4"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
